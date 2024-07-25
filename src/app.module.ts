@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { FileModule } from './file/file.module';
 import { ConfigModule} from '@nestjs/config';
 import { DatabaseModule } from './database/database.module';
+import { CloudinaryModule } from './cloudinary/cloudinary.module';
 
 
 @Module({
@@ -11,7 +12,7 @@ import { DatabaseModule } from './database/database.module';
     }),
     DatabaseModule,
     FileModule,
-    // CloudinaryModule,
+    CloudinaryModule,
   ],
   controllers: [],
   providers: [],
